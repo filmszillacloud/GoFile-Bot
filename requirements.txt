@@ -2,3 +2,4 @@ pyrogram
 tgcrypto
 requests
 urldl
+Hashtags-Extract
