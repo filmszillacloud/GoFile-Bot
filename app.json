@@ -1,0 +1,36 @@
+{
+    "name": "GoFile-Bot",
+    "description": "A telegram media to gofile uploader bot",
+    "repository": "https://github.com/filmszillacloud/GoFile-Bot",
+    "website": "https://monsterzero.wtf",
+    "success_url": "https://t.me/FZBOTS",
+    "env": {
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "required": "True",
+            "value": "324234"
+        },
+        "API_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "required": "True",
+            "value": "75685"
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token from @BotFather",
+            "required": "True",
+            "value": "4574565ewsfews"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
